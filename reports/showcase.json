@@ -1,0 +1,269 @@
+{
+ "id": "meridian-013",
+ "layout": "meridian",
+ "medium": "scan",
+ "size_mm": [
+  420,
+  297
+ ],
+ "received": "sheet_received.jpg",
+ "registered": "sheet_registered.jpg",
+ "regions": {
+  "title_block": [
+   [
+    274.0,
+    234.0,
+    411.8,
+    288.9
+   ]
+  ],
+  "parts_list": [
+   [
+    274.0,
+    195.3,
+    411.8,
+    240.5
+   ]
+  ],
+  "revision_table": [
+   [
+    301.9,
+    184.0,
+    410.2,
+    203.4
+   ]
+  ],
+  "notes": [
+   [
+    23.0,
+    250.2,
+    87.0,
+    285.7
+   ]
+  ],
+  "view": [
+   [
+    78.8,
+    11.3,
+    318.3,
+    192.1
+   ]
+  ]
+ },
+ "dims": [
+  {
+   "text": "135",
+   "truth": "135",
+   "x": 182.8,
+   "y": 185.4,
+   "vertical": false,
+   "status": "right",
+   "limits": "134.5 to 135.5 mm (ISO 2768-m)"
+  },
+  {
+   "text": "135 ±0.1",
+   "truth": "135 ±0.1",
+   "x": 105.1,
+   "y": 112.8,
+   "vertical": true,
+   "status": "right",
+   "limits": "134.9 to 135.1 mm (explicit)"
+  },
+  {
+   "text": "",
+   "truth": "20",
+   "x": 304.90129526542256,
+   "y": 185.458314387486,
+   "vertical": false,
+   "status": "missed",
+   "limits": null
+  },
+  {
+   "text": "3x M6",
+   "truth": "3x M6",
+   "x": 163.4,
+   "y": 63.2,
+   "vertical": false,
+   "status": "right",
+   "limits": null
+  },
+  {
+   "text": "25",
+   "truth": "25",
+   "x": 127.8,
+   "y": 35.4,
+   "vertical": false,
+   "status": "right",
+   "limits": "24.8 to 25.2 mm (ISO 2768-m)"
+  },
+  {
+   "text": "33.8",
+   "truth": "33.8",
+   "x": 97.1,
+   "y": 62.5,
+   "vertical": true,
+   "status": "right",
+   "limits": "33.5 to 34.1 mm (ISO 2768-m)"
+  },
+  {
+   "text": "50",
+   "truth": "50",
+   "x": 140.3,
+   "y": 27.6,
+   "vertical": false,
+   "status": "right",
+   "limits": "49.7 to 50.3 mm (ISO 2768-m)"
+  },
+  {
+   "text": "67.5",
+   "truth": "67.5",
+   "x": 89.2,
+   "y": 79.3,
+   "vertical": true,
+   "status": "right",
+   "limits": "67.2 to 67.8 mm (ISO 2768-m)"
+  },
+  {
+   "text": "4x R5",
+   "truth": "4x R5",
+   "x": 267.7,
+   "y": 186.1,
+   "vertical": false,
+   "status": "right",
+   "limits": "4.9 to 5.1 mm (ISO 2768-m)"
+  },
+  {
+   "text": "124",
+   "truth": "124",
+   "x": 177.0,
+   "y": 19.4,
+   "vertical": false,
+   "status": "right",
+   "limits": "123.5 to 124.5 mm (ISO 2768-m)"
+  },
+  {
+   "text": "4",
+   "truth": null,
+   "x": 91.4,
+   "y": 47.2,
+   "vertical": false,
+   "status": "extra",
+   "limits": null
+  }
+ ],
+ "fields": [
+  {
+   "field": "title",
+   "value": null,
+   "truth": "Bearing block assembly",
+   "right": false,
+   "conf": 0.0,
+   "routed": "review"
+  },
+  {
+   "field": "drawing_number",
+   "value": "MRC/2429/E",
+   "truth": "MRC/2429/E",
+   "right": true,
+   "conf": 0.55,
+   "routed": "review"
+  },
+  {
+   "field": "revision",
+   "value": "B",
+   "truth": "B",
+   "right": true,
+   "conf": 0.95,
+   "routed": "accepted"
+  },
+  {
+   "field": "material",
+   "value": "S355J2",
+   "truth": "S355J2",
+   "right": true,
+   "conf": 0.6,
+   "routed": "review"
+  },
+  {
+   "field": "general_tolerance",
+   "value": "m",
+   "truth": "TOLERANCES TO ISO 2768-m",
+   "right": true,
+   "conf": 0.6,
+   "routed": "review"
+  },
+  {
+   "field": "scale",
+   "value": "1:1",
+   "truth": "1:1",
+   "right": true,
+   "conf": 0.6,
+   "routed": "review"
+  },
+  {
+   "field": "mass_kg",
+   "value": "2.63",
+   "truth": "2.63",
+   "right": true,
+   "conf": 0.6,
+   "routed": "review"
+  },
+  {
+   "field": "date",
+   "value": "2025-11-10",
+   "truth": "10-Nov-2025",
+   "right": true,
+   "conf": 0.6,
+   "routed": "review"
+  }
+ ],
+ "decision": {
+  "route": "with_partner",
+  "reasons": [
+   "surface RAL 7035 at a partner"
+  ],
+  "partners": [
+   "powder_coating"
+  ],
+  "processes": [
+   "milling",
+   "tapping"
+  ]
+ },
+ "changes": {
+  "found": [
+   {
+    "kind": "dimension_changed",
+    "what": "124",
+    "before": "110",
+    "after": "124"
+   },
+   {
+    "kind": "feature_added",
+    "what": "4",
+    "before": "",
+    "after": "4"
+   },
+   {
+    "kind": "feature_removed",
+    "what": "101.2",
+    "before": "101.2",
+    "after": ""
+   }
+  ],
+  "truth": [
+   {
+    "kind": "feature_removed",
+    "key": "hole_3.x",
+    "before": "",
+    "after": ""
+   },
+   {
+    "kind": "feature_added",
+    "key": "hole_3.x",
+    "before": "",
+    "after": "124"
+   }
+  ]
+ }
+}

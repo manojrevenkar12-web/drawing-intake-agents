@@ -1,0 +1,31 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Tesseract and the fonts the customer layouts use
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-deu fonts-dejavu-core fonts-liberation fonts-freefont-ttf
+      - run: pip install --extra-index-url https://download.pytorch.org/whl/cpu -e ".[dev]"
+      - run: ruff format --check src tests scripts && ruff check src tests scripts
+      - run: pytest -q
+      - name: Held-out files unchanged since they were pinned
+        run: |
+          PYTHONPATH=src python -c "from dia.settings import load; from dia.world.dataset import generate; s=load(); generate('heldout', s.world.heldout_layouts, s.world.drawings_per_layout_heldout, s.world.seed)" > /dev/null
+          grep -v '^#' config/heldout.lock | sha256sum -c -
+      - name: Report regenerates unchanged from the committed benchmark files
+        run: |
+          PYTHONPATH=src python scripts/report.py > /dev/null
+          git diff --exit-code -- RESULTS.md web/public/data/dashboard.json
+  web:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: web } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: npm ci
+      - run: npx tsc --noEmit && npx eslint src test && npx vitest run && npx vite build

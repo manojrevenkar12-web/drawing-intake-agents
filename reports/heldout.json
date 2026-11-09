@@ -1,0 +1,208 @@
+{
+ "split": "heldout",
+ "drawings": 89,
+ "media": {
+  "vector": 51,
+  "scan": 38
+ },
+ "layouts": [
+  "kranich",
+  "meridian",
+  "tessaro"
+ ],
+ "regions": {
+  "detector": {
+   "title_block": {
+    "mean_iou": 0.881,
+    "found_iou50": 1.0
+   },
+   "revision_table": {
+    "mean_iou": 0.732,
+    "found_iou50": 0.989
+   },
+   "notes": {
+    "mean_iou": 0.667,
+    "found_iou50": 1.0
+   },
+   "view": {
+    "mean_iou": 0.752,
+    "found_iou50": 0.966
+   },
+   "parts_list": {
+    "mean_iou": 0.741,
+    "found_iou50": 1.0
+   }
+  },
+  "template": {
+   "title_block": {
+    "mean_iou": 0.824,
+    "found_iou50": 1.0
+   },
+   "revision_table": {
+    "mean_iou": 0.364,
+    "found_iou50": 0.303
+   },
+   "notes": {
+    "mean_iou": 0.589,
+    "found_iou50": 0.652
+   },
+   "view": {
+    "mean_iou": 0.53,
+    "found_iou50": 0.652
+   },
+   "parts_list": {
+    "mean_iou": 0.647,
+    "found_iou50": 0.667
+   }
+  }
+ },
+ "fields": {
+  "title": 0.4494,
+  "medium:vector": 0.9583,
+  "all": 0.9213,
+  "drawing_number": 1.0,
+  "revision": 0.9551,
+  "material": 0.9775,
+  "general_tolerance": 1.0,
+  "scale": 1.0,
+  "mass_kg": 0.9888,
+  "date": 1.0,
+  "medium:scan": 0.8717
+ },
+ "dimensions": {
+  "vector": {
+   "truth": 378,
+   "read": 373,
+   "recall_exact": 0.9868,
+   "precision_exact": 1.0,
+   "recall_nominal": 0.9868,
+   "limits_right": 1.0
+  },
+  "all": {
+   "truth": 666,
+   "read": 669,
+   "recall_exact": 0.9144,
+   "precision_exact": 0.9103,
+   "recall_nominal": 0.9459,
+   "limits_right": 0.9632
+  },
+  "scan": {
+   "truth": 288,
+   "read": 296,
+   "recall_exact": 0.8194,
+   "precision_exact": 0.7973,
+   "recall_nominal": 0.8924,
+   "limits_right": 0.9116
+  }
+ },
+ "parts_list": {
+  "cells": 92,
+  "cell_accuracy": 0.7826
+ },
+ "notes": {
+  "precision": 1.0,
+  "recall": 0.9155,
+  "requirements": 213
+ },
+ "revisions": {
+  "changes": 50,
+  "precision": 0.814,
+  "recall": 0.7,
+  "found_or_flagged": 0.8,
+  "flagged": 39,
+  "flagged_real": 5,
+  "recall_vector_pairs": 0.8,
+  "recall_with_a_scan": 0.6,
+  "false_examples": [
+   {
+    "sheet": "kranich-011",
+    "found": "tolerance_changed",
+    "what": "70",
+    "before": "70 ±0.2",
+    "after": "70"
+   },
+   {
+    "sheet": "meridian-011",
+    "found": "feature_added",
+    "what": "4",
+    "before": "",
+    "after": "4"
+   },
+   {
+    "sheet": "meridian-013",
+    "found": "dimension_changed",
+    "what": "124",
+    "before": "110",
+    "after": "124"
+   },
+   {
+    "sheet": "meridian-013",
+    "found": "feature_added",
+    "what": "4",
+    "before": "",
+    "after": "4"
+   },
+   {
+    "sheet": "meridian-013",
+    "found": "feature_removed",
+    "what": "101.2",
+    "before": "101.2",
+    "after": ""
+   },
+   {
+    "sheet": "tessaro-010",
+    "found": "tolerance_changed",
+    "what": "115",
+    "before": "115 ±0.05",
+    "after": "115"
+   },
+   {
+    "sheet": "tessaro-011",
+    "found": "feature_removed",
+    "what": "4",
+    "before": "4",
+    "after": ""
+   },
+   {
+    "sheet": "tessaro-015",
+    "found": "tolerance_changed",
+    "what": "12 ±0.05",
+    "before": "12",
+    "after": "12 ±0.05"
+   }
+  ]
+ },
+ "feasibility": {
+  "drawings": 89,
+  "route_agreement": 0.9663,
+  "true_routes": {
+   "with_partner": 32,
+   "in_house": 43,
+   "decline": 14
+  }
+ },
+ "onboarding": {
+  "0": {
+   "field_accuracy": 0.9219,
+   "fields": 640
+  },
+  "1": {
+   "field_accuracy": 0.9906,
+   "fields": 640
+  },
+  "3": {
+   "field_accuracy": 0.9891,
+   "fields": 640
+  }
+ },
+ "seconds": 468.5,
+ "review": {
+  "threshold": 0.61,
+  "fields": 712,
+  "auto_accepted_share": 0.4761,
+  "wrong_among_auto_accepted": 1,
+  "error_among_auto_accepted": 0.0029,
+  "minutes_per_drawing_manual_assumed": 20.0,
+  "minutes_per_drawing_with_desk": 4.49
+ }
+}

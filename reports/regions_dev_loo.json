@@ -1,0 +1,37 @@
+{
+ "acme_rail": {
+  "title_block": 0.91,
+  "parts_list": 0.884,
+  "revision_table": 0.787,
+  "notes": 0.804,
+  "view": 0.882
+ },
+ "boltwerk": {
+  "title_block": 0.962,
+  "parts_list": 0.881,
+  "revision_table": 0.785,
+  "notes": 0.859,
+  "view": 0.896
+ },
+ "nordlicht": {
+  "title_block": 0.927,
+  "parts_list": 0.0,
+  "revision_table": 0.745,
+  "notes": 0.725,
+  "view": 0.751
+ },
+ "sitec": {
+  "title_block": 0.93,
+  "parts_list": 0.158,
+  "revision_table": 0.011,
+  "notes": 0.757,
+  "view": 0.872
+ },
+ "vanderhoek": {
+  "title_block": 0.935,
+  "parts_list": 0.812,
+  "revision_table": 0.911,
+  "notes": 0.86,
+  "view": 0.886
+ }
+}

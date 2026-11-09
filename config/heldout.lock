@@ -1,0 +1,20 @@
+# Step 1 (2026-11-09): pinned after development on the five dev layouts, before the reader first read any held-out drawing. The held-out layouts were written with the generator at the start and only used to render data/heldout/.
+c6dee4014b0f980dec2b7f126bf17aeae5ec7721aea1779d81de94e692bdf4df  data/heldout_index.json
+0cedbee3066507546d7b078d89f581dac4ac9016f56082922034e4cfa1b25c44  src/dia/world/layouts.py
+88011519289374f96b8d53d72bcea17ae87e4121a8d844cc36dc01092ded7eb7  src/dia/world/parts.py
+2490fe8001568f7a5c491b2802e52f86c068de59a22c36d43aca0823e01c191f  src/dia/world/render.py
+c1354265ccd886e3af96f57a60b1b32ea1a9706cd32a7f8b337ca4b34de197ae  src/dia/perceive/page.py
+2157176d6bb6c48e2cb93526de4d66b805082078ef0cecc488462e6184f868d5  src/dia/perceive/ocr.py
+f7eb5e41b2c335596fca171b9f788b88e5566559c8728f3453d55b9a94b2ef92  src/dia/perceive/regions.py
+37e5497b3814d3704466ab513fe12b7eef40e05db04f1f8b969ddef2e11fdb9b  src/dia/perceive/dimensions.py
+5f94e9e623e699992b29c66078bca385ecf7455f41b25112467628b54299728c  src/dia/perceive/fields.py
+91b76a71f7e34a3c3cd0b52c254530e03c488d10a3805db07e4eba56d7f16f75  src/dia/perceive/reader.py
+920051aa7407ae36d56987c5caeefc4ca193857bbb109203c80ca2bdce73baa6  src/dia/engineering/tolerance.py
+e4fee4722f2f6c12197637357d56922dcdac3c9fe8895ca78447b40a38bd6621  src/dia/engineering/diff.py
+ad6cb43e2dcd2ee516816c7ba017b881afc736c3e6c5e462f0581d478438ce62  src/dia/engineering/feasibility.py
+3e027759d6908a5482a9acbf9512a89ed0944c488b44df28e60a141ce18b2336  src/dia/engineering/notes.py
+fa693462337054ce5febad54a128e6601a525678dbd75b20995571e0b5753e83  src/dia/standards/iso286.py
+d37ead04553dbe25b079600d5f33c283fb32a3536a3f465923e8629bbbc0a70a  src/dia/standards/iso2768.py
+6073595591f8bad36658526cc05508862c4e9d2e8ed3860f5b07f771f05f673c  models/regions.pt
+189b21862a372c34e125e776acc47b7bf13e9cec9af9302dbdfaa370cc790043  config/dia.toml
+911899af1106c2936c3f2ff12d37b5d4944ef1c881e5ad59f424b3e318ce2990  config/plant.yaml

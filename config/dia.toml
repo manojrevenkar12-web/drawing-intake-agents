@@ -1,0 +1,47 @@
+# Every threshold in the system. Code reads these through dia.settings.
+
+[world]
+seed = 20261109
+dev_layouts = ["acme_rail", "boltwerk", "nordlicht", "sitec", "vanderhoek"]
+heldout_layouts = ["kranich", "meridian", "tessaro"]      # never used for training or tuning
+drawings_per_layout_dev = 24
+drawings_per_layout_heldout = 20
+scan_share = 0.5              # share of drawings delivered as scans instead of vector PDFs
+revision_share = 0.5          # share of drawings that come with a previous revision to compare against
+
+[render]
+scan_dpi = 200
+detector_width = 256          # page width in pixels fed to the region detector
+
+[regions]
+epochs = 24
+learning_rate = 0.003
+batch = 8
+min_area_fraction = 0.002     # predicted components smaller than this share of the page are dropped
+
+[fields]
+max_value_distance_mm = 60    # a value further than this from its label is not read as that field
+
+[dimensions]
+max_join_gap_mm = 2.5         # words closer than this on one baseline form one dimension text
+
+[routing]
+# A field is accepted automatically only if its confidence is at least this; chosen on dev so that the share of
+# wrong values among auto-accepted fields stays under max_auto_error.
+max_auto_error = 0.005
+min_confidence = 0.61     # chosen on dev (reports/dev.json routing_curve): above the 0.6 ceiling of values read without their label, where dev error among accepted fields is 0.19%
+
+[review]
+# Assumptions for the time estimate, stated as such in every report.
+minutes_per_drawing_manual = 20.0
+minutes_per_field_review = 0.5
+minutes_per_drawing_check = 2.0
+
+[notes]
+llm_model = "claude-sonnet-5-5"
+llm_max_tokens = 800
+llm_timeout_s = 30
+
+[erp]
+plant = "1000"
+material_type = "HALB"

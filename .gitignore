@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+var/
+data/dev/
+data/heldout/
+data/truth/
+web/node_modules/
+web/dist/

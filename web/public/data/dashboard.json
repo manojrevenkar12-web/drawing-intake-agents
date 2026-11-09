@@ -1,0 +1,910 @@
+{
+ "dev": {
+  "dimensions": {
+   "all": {
+    "limits_right": 0.9546,
+    "precision_exact": 0.8997,
+    "read": 1486,
+    "recall_exact": 0.9278,
+    "recall_nominal": 0.9486,
+    "truth": 1441
+   },
+   "scan": {
+    "limits_right": 0.9045,
+    "precision_exact": 0.8019,
+    "read": 752,
+    "recall_exact": 0.8553,
+    "recall_nominal": 0.8979,
+    "truth": 705
+   },
+   "vector": {
+    "limits_right": 1.0,
+    "precision_exact": 1.0,
+    "read": 734,
+    "recall_exact": 0.9973,
+    "recall_nominal": 0.9973,
+    "truth": 736
+   }
+  },
+  "drawings": 177,
+  "feasibility": {
+   "drawings": 177,
+   "route_agreement": 0.9435,
+   "true_routes": {
+    "decline": 14,
+    "in_house": 73,
+    "with_partner": 90
+   }
+  },
+  "fields": {
+   "all": 0.9499,
+   "date": 0.9887,
+   "drawing_number": 1.0,
+   "general_tolerance": 0.9944,
+   "mass_kg": 1.0,
+   "material": 0.9831,
+   "medium:scan": 0.8968,
+   "medium:vector": 1.0,
+   "revision": 0.9492,
+   "scale": 1.0,
+   "title": 0.6836
+  },
+  "layouts": [
+   "acme_rail",
+   "boltwerk",
+   "nordlicht",
+   "sitec",
+   "vanderhoek"
+  ],
+  "media": {
+   "scan": 86,
+   "vector": 91
+  },
+  "notes": {
+   "precision": 1.0,
+   "recall": 0.9097,
+   "requirements": 454
+  },
+  "onboarding": {
+   "0": {
+    "field_accuracy": 0.9498,
+    "fields": 1296
+   },
+   "1": {
+    "field_accuracy": 0.9861,
+    "fields": 1296
+   },
+   "3": {
+    "field_accuracy": 0.9877,
+    "fields": 1296
+   }
+  },
+  "parts_list": {
+   "cell_accuracy": 0.8429,
+   "cells": 312
+  },
+  "regions": {
+   "detector": {
+    "notes": {
+     "found_iou50": 1.0,
+     "mean_iou": 0.664
+    },
+    "parts_list": {
+     "found_iou50": 1.0,
+     "mean_iou": 0.803
+    },
+    "revision_table": {
+     "found_iou50": 0.994,
+     "mean_iou": 0.738
+    },
+    "title_block": {
+     "found_iou50": 1.0,
+     "mean_iou": 0.853
+    },
+    "view": {
+     "found_iou50": 0.972,
+     "mean_iou": 0.781
+    }
+   },
+   "template": {
+    "notes": {
+     "found_iou50": 0.689,
+     "mean_iou": 0.637
+    },
+    "parts_list": {
+     "found_iou50": 1.0,
+     "mean_iou": 0.8
+    },
+    "revision_table": {
+     "found_iou50": 0.593,
+     "mean_iou": 0.531
+    },
+    "title_block": {
+     "found_iou50": 1.0,
+     "mean_iou": 0.845
+    },
+    "view": {
+     "found_iou50": 0.667,
+     "mean_iou": 0.536
+    }
+   }
+  },
+  "review": {
+   "auto_accepted_share": 0.7373,
+   "error_among_auto_accepted": 0.0019,
+   "fields": 1416,
+   "minutes_per_drawing_manual_assumed": 20.0,
+   "minutes_per_drawing_with_desk": 3.55,
+   "threshold": 0.61,
+   "wrong_among_auto_accepted": 2
+  },
+  "revisions": {
+   "changes": 108,
+   "false_examples": [
+    {
+     "after": "55",
+     "before": "55 ±0.05",
+     "found": "tolerance_changed",
+     "sheet": "acme_rail-005",
+     "what": "55"
+    },
+    {
+     "after": "",
+     "before": "70",
+     "found": "feature_removed",
+     "sheet": "acme_rail-006",
+     "what": "70"
+    },
+    {
+     "after": "Ø130 +0.1/0",
+     "before": "",
+     "found": "feature_added",
+     "sheet": "acme_rail-013",
+     "what": "Ø130 +0.1/0"
+    },
+    {
+     "after": "",
+     "before": "27.5",
+     "found": "feature_removed",
+     "sheet": "acme_rail-018",
+     "what": "27.5"
+    },
+    {
+     "after": "4",
+     "before": "",
+     "found": "feature_added",
+     "sheet": "acme_rail-019",
+     "what": "4"
+    },
+    {
+     "after": "4",
+     "before": "",
+     "found": "feature_added",
+     "sheet": "acme_rail-019",
+     "what": "4"
+    },
+    {
+     "after": "4",
+     "before": "",
+     "found": "feature_added",
+     "sheet": "acme_rail-020",
+     "what": "4"
+    },
+    {
+     "after": "75",
+     "before": "",
+     "found": "feature_added",
+     "sheet": "boltwerk-005",
+     "what": "75"
+    },
+    {
+     "after": "41.5",
+     "before": "47.5",
+     "found": "dimension_changed",
+     "sheet": "boltwerk-007",
+     "what": "41.5"
+    },
+    {
+     "after": "",
+     "before": "Ø220 +0.2/-0.1",
+     "found": "feature_removed",
+     "sheet": "boltwerk-011",
+     "what": "Ø220 +0.2/-0.1"
+    },
+    {
+     "after": "12",
+     "before": "12 ±0.05",
+     "found": "tolerance_changed",
+     "sheet": "nordlicht-004",
+     "what": "12"
+    },
+    {
+     "after": "375",
+     "before": "37.5",
+     "found": "dimension_changed",
+     "sheet": "nordlicht-004",
+     "what": "375"
+    }
+   ],
+   "flagged": 119,
+   "flagged_real": 18,
+   "found_or_flagged": 0.8889,
+   "precision": 0.7664,
+   "recall": 0.7593,
+   "recall_vector_pairs": 0.931,
+   "recall_with_a_scan": 0.6962
+  }
+ },
+ "heldout": {
+  "dimensions": {
+   "all": {
+    "limits_right": 0.9632,
+    "precision_exact": 0.9103,
+    "read": 669,
+    "recall_exact": 0.9144,
+    "recall_nominal": 0.9459,
+    "truth": 666
+   },
+   "scan": {
+    "limits_right": 0.9116,
+    "precision_exact": 0.7973,
+    "read": 296,
+    "recall_exact": 0.8194,
+    "recall_nominal": 0.8924,
+    "truth": 288
+   },
+   "vector": {
+    "limits_right": 1.0,
+    "precision_exact": 1.0,
+    "read": 373,
+    "recall_exact": 0.9868,
+    "recall_nominal": 0.9868,
+    "truth": 378
+   }
+  },
+  "drawings": 89,
+  "feasibility": {
+   "drawings": 89,
+   "route_agreement": 0.9663,
+   "true_routes": {
+    "decline": 14,
+    "in_house": 43,
+    "with_partner": 32
+   }
+  },
+  "fields": {
+   "all": 0.9213,
+   "date": 1.0,
+   "drawing_number": 1.0,
+   "general_tolerance": 1.0,
+   "mass_kg": 0.9888,
+   "material": 0.9775,
+   "medium:scan": 0.8717,
+   "medium:vector": 0.9583,
+   "revision": 0.9551,
+   "scale": 1.0,
+   "title": 0.4494
+  },
+  "layouts": [
+   "kranich",
+   "meridian",
+   "tessaro"
+  ],
+  "media": {
+   "scan": 38,
+   "vector": 51
+  },
+  "notes": {
+   "precision": 1.0,
+   "recall": 0.9155,
+   "requirements": 213
+  },
+  "onboarding": {
+   "0": {
+    "field_accuracy": 0.9219,
+    "fields": 640
+   },
+   "1": {
+    "field_accuracy": 0.9906,
+    "fields": 640
+   },
+   "3": {
+    "field_accuracy": 0.9891,
+    "fields": 640
+   }
+  },
+  "parts_list": {
+   "cell_accuracy": 0.7826,
+   "cells": 92
+  },
+  "regions": {
+   "detector": {
+    "notes": {
+     "found_iou50": 1.0,
+     "mean_iou": 0.667
+    },
+    "parts_list": {
+     "found_iou50": 1.0,
+     "mean_iou": 0.741
+    },
+    "revision_table": {
+     "found_iou50": 0.989,
+     "mean_iou": 0.732
+    },
+    "title_block": {
+     "found_iou50": 1.0,
+     "mean_iou": 0.881
+    },
+    "view": {
+     "found_iou50": 0.966,
+     "mean_iou": 0.752
+    }
+   },
+   "template": {
+    "notes": {
+     "found_iou50": 0.652,
+     "mean_iou": 0.589
+    },
+    "parts_list": {
+     "found_iou50": 0.667,
+     "mean_iou": 0.647
+    },
+    "revision_table": {
+     "found_iou50": 0.303,
+     "mean_iou": 0.364
+    },
+    "title_block": {
+     "found_iou50": 1.0,
+     "mean_iou": 0.824
+    },
+    "view": {
+     "found_iou50": 0.652,
+     "mean_iou": 0.53
+    }
+   }
+  },
+  "review": {
+   "auto_accepted_share": 0.4761,
+   "error_among_auto_accepted": 0.0029,
+   "fields": 712,
+   "minutes_per_drawing_manual_assumed": 20.0,
+   "minutes_per_drawing_with_desk": 4.49,
+   "threshold": 0.61,
+   "wrong_among_auto_accepted": 1
+  },
+  "revisions": {
+   "changes": 50,
+   "false_examples": [
+    {
+     "after": "70",
+     "before": "70 ±0.2",
+     "found": "tolerance_changed",
+     "sheet": "kranich-011",
+     "what": "70"
+    },
+    {
+     "after": "4",
+     "before": "",
+     "found": "feature_added",
+     "sheet": "meridian-011",
+     "what": "4"
+    },
+    {
+     "after": "124",
+     "before": "110",
+     "found": "dimension_changed",
+     "sheet": "meridian-013",
+     "what": "124"
+    },
+    {
+     "after": "4",
+     "before": "",
+     "found": "feature_added",
+     "sheet": "meridian-013",
+     "what": "4"
+    },
+    {
+     "after": "",
+     "before": "101.2",
+     "found": "feature_removed",
+     "sheet": "meridian-013",
+     "what": "101.2"
+    },
+    {
+     "after": "115",
+     "before": "115 ±0.05",
+     "found": "tolerance_changed",
+     "sheet": "tessaro-010",
+     "what": "115"
+    },
+    {
+     "after": "",
+     "before": "4",
+     "found": "feature_removed",
+     "sheet": "tessaro-011",
+     "what": "4"
+    },
+    {
+     "after": "12 ±0.05",
+     "before": "12",
+     "found": "tolerance_changed",
+     "sheet": "tessaro-015",
+     "what": "12 ±0.05"
+    }
+   ],
+   "flagged": 39,
+   "flagged_real": 5,
+   "found_or_flagged": 0.8,
+   "precision": 0.814,
+   "recall": 0.7,
+   "recall_vector_pairs": 0.8,
+   "recall_with_a_scan": 0.6
+  }
+ },
+ "regions_loo": {
+  "acme_rail": {
+   "notes": 0.804,
+   "parts_list": 0.884,
+   "revision_table": 0.787,
+   "title_block": 0.91,
+   "view": 0.882
+  },
+  "boltwerk": {
+   "notes": 0.859,
+   "parts_list": 0.881,
+   "revision_table": 0.785,
+   "title_block": 0.962,
+   "view": 0.896
+  },
+  "nordlicht": {
+   "notes": 0.725,
+   "parts_list": 0.0,
+   "revision_table": 0.745,
+   "title_block": 0.927,
+   "view": 0.751
+  },
+  "sitec": {
+   "notes": 0.757,
+   "parts_list": 0.158,
+   "revision_table": 0.011,
+   "title_block": 0.93,
+   "view": 0.872
+  },
+  "vanderhoek": {
+   "notes": 0.86,
+   "parts_list": 0.812,
+   "revision_table": 0.911,
+   "title_block": 0.935,
+   "view": 0.886
+  }
+ },
+ "routing": {
+  "curve": [
+   {
+    "accepted_share": 1.0,
+    "error": 0.003,
+    "threshold": 0.0
+   },
+   {
+    "accepted_share": 0.9911,
+    "error": 0.0015,
+    "threshold": 0.23
+   },
+   {
+    "accepted_share": 0.9904,
+    "error": 0.0015,
+    "threshold": 0.28
+   },
+   {
+    "accepted_share": 0.9904,
+    "error": 0.0015,
+    "threshold": 0.35
+   },
+   {
+    "accepted_share": 0.9896,
+    "error": 0.0015,
+    "threshold": 0.38
+   },
+   {
+    "accepted_share": 0.9889,
+    "error": 0.0015,
+    "threshold": 0.43
+   },
+   {
+    "accepted_share": 0.9874,
+    "error": 0.0015,
+    "threshold": 0.47
+   },
+   {
+    "accepted_share": 0.9874,
+    "error": 0.0015,
+    "threshold": 0.49
+   },
+   {
+    "accepted_share": 0.9867,
+    "error": 0.0015,
+    "threshold": 0.5
+   },
+   {
+    "accepted_share": 0.9844,
+    "error": 0.0015,
+    "threshold": 0.52
+   },
+   {
+    "accepted_share": 0.983,
+    "error": 0.0015,
+    "threshold": 0.53
+   },
+   {
+    "accepted_share": 0.9815,
+    "error": 0.0015,
+    "threshold": 0.54
+   },
+   {
+    "accepted_share": 0.9815,
+    "error": 0.0015,
+    "threshold": 0.55
+   },
+   {
+    "accepted_share": 0.9377,
+    "error": 0.0016,
+    "threshold": 0.57
+   },
+   {
+    "accepted_share": 0.9348,
+    "error": 0.0016,
+    "threshold": 0.58
+   },
+   {
+    "accepted_share": 0.9348,
+    "error": 0.0016,
+    "threshold": 0.59
+   },
+   {
+    "accepted_share": 0.9333,
+    "error": 0.0016,
+    "threshold": 0.6
+   },
+   {
+    "accepted_share": 0.7739,
+    "error": 0.0019,
+    "threshold": 0.62
+   },
+   {
+    "accepted_share": 0.7724,
+    "error": 0.0019,
+    "threshold": 0.65
+   },
+   {
+    "accepted_share": 0.7368,
+    "error": 0.002,
+    "threshold": 0.66
+   },
+   {
+    "accepted_share": 0.7361,
+    "error": 0.002,
+    "threshold": 0.74
+   },
+   {
+    "accepted_share": 0.7361,
+    "error": 0.002,
+    "threshold": 0.78
+   },
+   {
+    "accepted_share": 0.7354,
+    "error": 0.002,
+    "threshold": 0.8
+   },
+   {
+    "accepted_share": 0.7228,
+    "error": 0.0021,
+    "threshold": 0.84
+   },
+   {
+    "accepted_share": 0.722,
+    "error": 0.0021,
+    "threshold": 0.85
+   },
+   {
+    "accepted_share": 0.7213,
+    "error": 0.0021,
+    "threshold": 0.86
+   },
+   {
+    "accepted_share": 0.7205,
+    "error": 0.0021,
+    "threshold": 0.9
+   },
+   {
+    "accepted_share": 0.7191,
+    "error": 0.0021,
+    "threshold": 0.91
+   },
+   {
+    "accepted_share": 0.7191,
+    "error": 0.0021,
+    "threshold": 0.95
+   },
+   {
+    "accepted_share": 0.1631,
+    "error": 0.0,
+    "threshold": 0.99
+   }
+  ],
+  "max_error": 0.005,
+  "threshold": 0.61
+ },
+ "showcase": {
+  "changes": {
+   "found": [
+    {
+     "after": "124",
+     "before": "110",
+     "kind": "dimension_changed",
+     "what": "124"
+    },
+    {
+     "after": "4",
+     "before": "",
+     "kind": "feature_added",
+     "what": "4"
+    },
+    {
+     "after": "",
+     "before": "101.2",
+     "kind": "feature_removed",
+     "what": "101.2"
+    }
+   ],
+   "truth": [
+    {
+     "after": "",
+     "before": "",
+     "key": "hole_3.x",
+     "kind": "feature_removed"
+    },
+    {
+     "after": "124",
+     "before": "",
+     "key": "hole_3.x",
+     "kind": "feature_added"
+    }
+   ]
+  },
+  "decision": {
+   "partners": [
+    "powder_coating"
+   ],
+   "processes": [
+    "milling",
+    "tapping"
+   ],
+   "reasons": [
+    "surface RAL 7035 at a partner"
+   ],
+   "route": "with_partner"
+  },
+  "dims": [
+   {
+    "limits": "134.5 to 135.5 mm (ISO 2768-m)",
+    "status": "right",
+    "text": "135",
+    "truth": "135",
+    "vertical": false,
+    "x": 182.8,
+    "y": 185.4
+   },
+   {
+    "limits": "134.9 to 135.1 mm (explicit)",
+    "status": "right",
+    "text": "135 ±0.1",
+    "truth": "135 ±0.1",
+    "vertical": true,
+    "x": 105.1,
+    "y": 112.8
+   },
+   {
+    "limits": null,
+    "status": "missed",
+    "text": "",
+    "truth": "20",
+    "vertical": false,
+    "x": 304.90129526542256,
+    "y": 185.458314387486
+   },
+   {
+    "limits": null,
+    "status": "right",
+    "text": "3x M6",
+    "truth": "3x M6",
+    "vertical": false,
+    "x": 163.4,
+    "y": 63.2
+   },
+   {
+    "limits": "24.8 to 25.2 mm (ISO 2768-m)",
+    "status": "right",
+    "text": "25",
+    "truth": "25",
+    "vertical": false,
+    "x": 127.8,
+    "y": 35.4
+   },
+   {
+    "limits": "33.5 to 34.1 mm (ISO 2768-m)",
+    "status": "right",
+    "text": "33.8",
+    "truth": "33.8",
+    "vertical": true,
+    "x": 97.1,
+    "y": 62.5
+   },
+   {
+    "limits": "49.7 to 50.3 mm (ISO 2768-m)",
+    "status": "right",
+    "text": "50",
+    "truth": "50",
+    "vertical": false,
+    "x": 140.3,
+    "y": 27.6
+   },
+   {
+    "limits": "67.2 to 67.8 mm (ISO 2768-m)",
+    "status": "right",
+    "text": "67.5",
+    "truth": "67.5",
+    "vertical": true,
+    "x": 89.2,
+    "y": 79.3
+   },
+   {
+    "limits": "4.9 to 5.1 mm (ISO 2768-m)",
+    "status": "right",
+    "text": "4x R5",
+    "truth": "4x R5",
+    "vertical": false,
+    "x": 267.7,
+    "y": 186.1
+   },
+   {
+    "limits": "123.5 to 124.5 mm (ISO 2768-m)",
+    "status": "right",
+    "text": "124",
+    "truth": "124",
+    "vertical": false,
+    "x": 177.0,
+    "y": 19.4
+   },
+   {
+    "limits": null,
+    "status": "extra",
+    "text": "4",
+    "truth": null,
+    "vertical": false,
+    "x": 91.4,
+    "y": 47.2
+   }
+  ],
+  "fields": [
+   {
+    "conf": 0.0,
+    "field": "title",
+    "right": false,
+    "routed": "review",
+    "truth": "Bearing block assembly",
+    "value": null
+   },
+   {
+    "conf": 0.55,
+    "field": "drawing_number",
+    "right": true,
+    "routed": "review",
+    "truth": "MRC/2429/E",
+    "value": "MRC/2429/E"
+   },
+   {
+    "conf": 0.95,
+    "field": "revision",
+    "right": true,
+    "routed": "accepted",
+    "truth": "B",
+    "value": "B"
+   },
+   {
+    "conf": 0.6,
+    "field": "material",
+    "right": true,
+    "routed": "review",
+    "truth": "S355J2",
+    "value": "S355J2"
+   },
+   {
+    "conf": 0.6,
+    "field": "general_tolerance",
+    "right": true,
+    "routed": "review",
+    "truth": "TOLERANCES TO ISO 2768-m",
+    "value": "m"
+   },
+   {
+    "conf": 0.6,
+    "field": "scale",
+    "right": true,
+    "routed": "review",
+    "truth": "1:1",
+    "value": "1:1"
+   },
+   {
+    "conf": 0.6,
+    "field": "mass_kg",
+    "right": true,
+    "routed": "review",
+    "truth": "2.63",
+    "value": "2.63"
+   },
+   {
+    "conf": 0.6,
+    "field": "date",
+    "right": true,
+    "routed": "review",
+    "truth": "10-Nov-2025",
+    "value": "2025-11-10"
+   }
+  ],
+  "id": "meridian-013",
+  "layout": "meridian",
+  "medium": "scan",
+  "received": "sheet_received.jpg",
+  "regions": {
+   "notes": [
+    [
+     23.0,
+     250.2,
+     87.0,
+     285.7
+    ]
+   ],
+   "parts_list": [
+    [
+     274.0,
+     195.3,
+     411.8,
+     240.5
+    ]
+   ],
+   "revision_table": [
+    [
+     301.9,
+     184.0,
+     410.2,
+     203.4
+    ]
+   ],
+   "title_block": [
+    [
+     274.0,
+     234.0,
+     411.8,
+     288.9
+    ]
+   ],
+   "view": [
+    [
+     78.8,
+     11.3,
+     318.3,
+     192.1
+    ]
+   ]
+  },
+  "registered": "sheet_registered.jpg",
+  "size_mm": [
+   420,
+   297
+  ]
+ },
+ "tests": {
+  "python": 49,
+  "web": 5
+ }
+}

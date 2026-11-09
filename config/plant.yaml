@@ -1,0 +1,20 @@
+# What the receiving plant can make. Read by dia.engineering.feasibility; every number here is a plant setting,
+# not a property of any drawing.
+plant: "Werk 1000"
+envelope_mm: [600, 400, 300]      # largest part the machines take, largest dimension first
+materials_in_stock: ["S235JR", "S355J2", "1.4301", "EN AW-6082-T6", "DC01", "C45E", "42CrMo4"]
+# The finest ISO tolerance grade each process holds in this plant (smaller number = finer).
+processes:
+  laser_cutting:   {it_grade: 13, features: [outline]}
+  drilling:        {it_grade: 11, features: [hole]}
+  milling:         {it_grade: 8,  features: [outline, hole, step, length]}
+  reaming:         {it_grade: 7,  features: [hole]}
+  turning:         {it_grade: 7,  features: [step, length, outline]}
+  tapping:         {it_grade: 0,  features: [thread], threads: [3, 4, 5, 6, 8, 10, 12, 16]}
+# Done outside by a partner, with the lead time it adds.
+subcontract:
+  cylindrical_grinding: {it_grade: 6, features: [step, hole], extra_days: 10}
+  heat_treatment:       {features: [hardness], extra_days: 7}
+  zinc_plating:         {features: [surface], extra_days: 5}
+  powder_coating:       {features: [surface], extra_days: 6}
+  anodising:            {features: [surface], extra_days: 6}
